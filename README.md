@@ -4,14 +4,14 @@
 - Distro: Garuda Linux (Arch-based)
 - Kernel: linux-zen 7.2.3.zen1-2
 - Desktop: KDE Plasma (`org.kde.breezedark.desktop`)
-- Steam: `/home/sin/.local/share/Steam`
+- Steam: `/home/livings/.local/share/Steam`
 - Proton: Proton Experimental
 - Game: Once Human
 
 ## Steam Config Fixes Applied
-1. **libraryfolders.vdf** — ensured Steam library path uses Linux native path (`/home/sin/.local/share/Steam`) instead of Windows-style `S:\`. Files corrected:
-   - `/home/sin/.local/share/Steam/config/libraryfolders.vdf`
-   - `/home/sin/.local/share/Steam/steamapps/libraryfolders.vdf`
+1. **libraryfolders.vdf** — ensured Steam library path uses Linux native path (`/home/livings/.local/share/Steam`) instead of Windows-style `S:\`. Files corrected:
+   - `/home/livings/.local/share/Steam/config/libraryfolders.vdf`
+   - `/home/livings/.local/share/Steam/steamapps/libraryfolders.vdf`
 
 2. **LD_PRELOAD cleanup** — removed stale `gameoverlayrenderer.so` LD_PRELOAD entries. No leftover overlay hook files found in env at runtime.
 
